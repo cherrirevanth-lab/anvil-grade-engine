@@ -1,0 +1,18 @@
+{
+  "project": "01-grade-engine",
+  "node": "v26.13.0",
+  "ok": true,
+  "durationMs": 1446,
+  "checks": [
+    {
+      "name": "unit-tests",
+      "ok": true,
+      "detail": "8 passed, 0 failed"
+    },
+    {
+      "name": "cli-smoke",
+      "ok": true,
+      "detail": "demo submission graded passed"
+    }
+  ]
+}

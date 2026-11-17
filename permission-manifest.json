@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "project": "01-grade-engine",
+  "runtime": { "kind": "node", "minVersion": "22", "dependencies": 0 },
+  "network": { "required": false, "hosts": [] },
+  "secrets": [],
+  "environment": [],
+  "filesystem": [
+    { "scope": "read", "path": "this repository" },
+    { "scope": "write", "path": "OS temp directory, per grade, deleted after" }
+  ],
+  "processes": { "spawns": ["node"], "reason": "isolation of learner code" },
+  "github": {
+    "workflowPermissions": { "contents": "read" },
+    "reason": "CI only reads the repository; no writes, no secrets, no packages"
+  },
+  "humanApprovalRequiredFor": [
+    "running learner code outside a container",
+    "raising any limit in src/index.mjs"
+  ]
+}

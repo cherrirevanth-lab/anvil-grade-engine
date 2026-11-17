@@ -1,0 +1,15 @@
+{
+  "name": "@anvil/grade-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic hidden-test grader for learner code. Returns counts, never test source.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/",
+    "start": "node src/cli.mjs",
+    "verify": "node verify.mjs"
+  },
+  "keywords": ["grading", "sandbox", "education", "node-test"],
+  "license": "MIT"
+}
